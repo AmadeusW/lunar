@@ -5,6 +5,6 @@ import skyfield
 print(skyfield.VERSION)
 ts = load.timescale()
 t = ts.now()
-ephemeris = load('./de421.bsp')
+ephemeris = load('test/de421.bsp')
 print(moon_phase(ephemeris, t).degrees)
 
